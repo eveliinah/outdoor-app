@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Luontokohteet</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth&family=Open+Sans:wght@500&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css"/>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <h1>Luontokohteet</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Kartta</a></li>
+            <li><a href="ohjeet.html">Ohjeet</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="container">
+
+    <aside class="sivuvalikko" id="sivuvalikko">
+        <a href="javascript:void(0)" class="sulje" onclick="suljeSivuvalikko()">&times;</a>
+        <select name="maakunnat" id="maakunnat">
+            <option class="alue">--Valitse maakunta--</option>
+            <option>Koko Suomi</option>
+            <option class="alue">--Etelä-Suomi--</option>
+            <option>Uusimaa</option>
+            <option>Kanta-Häme</option>
+            <option>Varsinais-Suomi</option>
+            <option class="alue">--Länsi-Suomi--</option>
+            <option>Pirkanmaa</option>
+            <option>Satakunta</option>
+            <option>Keski-Suomi</option>
+            <option>Keski-Pohjanmaa</option>
+            <option>Etelä-Pohjanmaa</option>
+            <option>Ahvenanmaa</option>
+            <option class="alue">--Itä-Suomi--</option>
+            <option>Kymenlaakso</option>
+            <option>Päijät-Häme</option>
+            <option>Etelä-Karjala</option>
+            <option>Etelä-Savo</option>
+            <option>Pohjois-Savo</option>
+            <option>Pohjois-Karjala</option>
+            <option class="alue">--Pohjois-Suomi--</option>
+            <option>Kainuu</option>
+            <option>Lappi</option>
+            <option>Pohjanmaa</option>
+            <option>Pohjois-Pohjanmaa</option>
+        </select>
+        <form>
+            <h3>Valitse kartalla näytettävät kohteet:</h3>
+            <div class="kohteet">
+                <input type="checkbox" id="nuotiopaikka" value="Nuotiopaikka">
+                <label for="nuotiopaikka">Nuotiopaikka</label>
+            </div>
+            <div class="kohteet">
+                <input type="checkbox" id="laavu" value="Laavu">
+                <label for="laavu">Laavu</label>
+            </div>
+            <div class="kohteet">
+                <input type="checkbox" id="kota" value="Kota">
+                <label for="kota">Kota</label>
+            </div>
+            <div class="kohteet">
+                <input type="checkbox" id="varaustupa" value="Varaustupa">
+                <label for="varaustupa">Varaustupa</label>
+            </div>
+            <div class="kohteet">
+                <input type="checkbox" id="autiotupa" value="Autiotupa">
+                <label for="autiotupa">Autiotupa</label>
+            </div>
+            <div class="kohteet">
+                <input type="checkbox" id="paivatupa" value="Päivätupa">
+                <label for="paivatupa">Päivätupa</label>
+            </div>
+            <div class="kohteet">
+                <input type="checkbox" id="kammi" value="Kammi">
+                <label for="kammi">Kammi</label>
+            </div>
+            <div class="kohteet">
+                <input type="checkbox" id="sauna" value="Sauna">
+                <label for="sauna">Sauna</label>
+            </div>
+            <div class="kohteet">
+                <input type="checkbox" id="ruokailukatos" value="Ruokailukatos">
+                <label for="ruokailukatos">Ruokailukatos</label>
+            </div>
+            <div class="kohteet">
+                <input type="checkbox" id="lintutorni" value="Lintutorni">
+                <label for="lintutorni">Lintutorni</label>
+            </div>
+            <div class="kohteet">
+                <input type="checkbox" id="nahtavyys" value="Nähtävyys">
+                <label for="nahtavyys">Nähtävyys</label>
+            </div>
+            <div class="kohteet">
+                <input type="checkbox" id="luola" value="Luola">
+                <label for="luola">Luola</label>
+            </div>
+            <div class="kohteet">
+                <input type="checkbox" id="lahde" value="Lähde">
+                <label for="lahde">Lähde</label>
+            </div>
+            <input id="submit" type="submit" value="Näytä">
+        </form>
+    </aside>
+
+
+    <div id="map">
+        <button class="avaa" onclick="avaaSivuvalikko()">&#9776;</button>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+<script src="js/leaflet-routing-machine.js"></script>
+<script src="js/funktiot.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

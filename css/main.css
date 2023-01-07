@@ -1,0 +1,670 @@
+/*Etusivu*/
+
+.alue {
+    font-weight: bold;
+}
+
+article h3 {
+    margin: 0;
+    font-size: 24px;
+}
+
+article {
+    color: #001514;
+    width: 100%;
+    margin: 40px 0 20px 0;
+}
+
+article p {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 10px 0 0 0;
+    line-height: 1.5em;
+    font-size: 16px;
+}
+
+main {
+    padding: 0 30px;
+}
+
+#paaotsikko {
+    font-size: 40px;
+    margin: 30px 0 0 0;
+}
+
+/*pop-up*/
+
+.leaflet-popup-content-wrapper {
+    width: 200px;
+    background-color: #D1DEDE;
+    border: thin solid #001514;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.leaflet-popup-content-wrapper details {
+    margin: 5px;
+}
+
+#nappi {
+    font-family: 'Amaranth', sans-serif;
+    color: #fdfffc;
+    background-color: #073C5F;
+    border-radius: 5px;
+    padding: 3px;
+    margin-left: 40px;
+    width: 80px;
+    height: 30px;
+    text-shadow: 0px 0 0 #000, 0 0px 0 #000, 0 0px 0 #000, -1px 0 0 #000;
+}
+
+#nappi:hover {
+    background-color: #031826;
+}
+
+.leaflet-popup-tip {
+    background-color: #A9C4DB;
+    border: thin solid #001514;
+}
+
+.leaflet-container a.leaflet-popup-close-button {
+    padding: 10px;
+    color: black;
+    margin-left: 10px;
+}
+
+/*Navigointi*/
+.leaflet-routing-collapse-btn {
+    padding: 10px 20px 20px 10px;
+    margin-left: 10px;
+    color: black;
+}
+
+.leaflet-routing-collapse-btn:hover {
+    color: #5d5d5d;
+}
+
+.leaflet-top, .leaflet-right {
+    max-width: 100%;
+}
+
+.leaflet-routing-container {
+    border-radius: 12px;
+    background-color: #E4F2E6;
+    padding: 5px 5px 5px 15px;
+    width: 350px;
+    font-family: 'Open Sans', sans-serif;
+    max-height: 73vh;
+}
+
+td {
+    padding: 3px 5px;
+}
+
+.leaflet-routing-alternatives-container h2 {
+    margin-top: 20px;
+}
+
+table {
+    margin-right: 30px;
+
+}
+
+.leaflet-routing-container-hide {
+    padding: 0;
+}
+
+.leaflet-control-container .leaflet-routing-container-hide .leaflet-routing-collapse-btn {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    left: 1px;
+    top: 2px;
+    right: 0;
+    bottom: 0;
+    display: block;
+    width: 26px;
+    height: 23px;
+}
+
+/*yleiset asetukset*/
+.suunnitelma-otsikot {
+    margin: 60px 0 5px 0;
+}
+
+figcaption {
+    margin-bottom: 12px;
+}
+
+figure {
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0 0 0 20px;
+}
+
+html {
+    background: #D6EBD9;
+}
+
+body {
+    font-family: 'Amaranth', sans-serif;
+    margin: 0;
+    width: 100%;
+}
+
+h1, h2 {
+    font-family: 'Amaranth', sans-serif;
+    color: #001514;
+}
+
+
+#map {
+    margin: 15px 5% 5px 5%;
+    width: 100%;
+    height: 75vh;
+    z-index: 1;
+}
+
+
+.alert {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+    margin-bottom: 15px;
+}
+
+select {
+    margin: 0 0 20px 0;
+    font-family: inherit;
+    font-size: 15px;
+    border: thin solid #1ebe48;
+    border-radius: 4px;
+    padding: 7px 12px;
+    width: 210px;
+}
+
+legend {
+    margin: 0 0 5px 0;
+    font-size: 20px;
+}
+
+.kohteet {
+    margin-top: 5px;
+    font-size: 15px;
+    padding: 0;
+
+}
+
+.kohteet input {
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+}
+
+
+form {
+    font-family: 'Amaranth', sans-serif;
+    margin: 5px;
+}
+
+#submit {
+    margin: 15px 0 15px 0;
+    font-size: 15px;
+    width: 100px;
+    height: 30px;
+    border: thin solid #33673b;
+    border-radius: 5px;
+    color: #fdfffc;
+    background-color: #33673B;
+    font-family: 'Amaranth', sans-serif;
+    padding: 3px;
+    text-shadow: 0px 0 0 #000, 0 0px 0 #000, 0 0px 0 #000, -1px 0 0 #000;
+}
+
+#submit:hover {
+    background-color: #0C461F;
+}
+
+#nimi {
+    width: 50%;
+}
+
+.container {
+    width: 100%;
+    padding: 0 0 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    background-color: #F1F8F2;
+}
+
+/*Header*/
+header h1 {
+    font-size: 55px;
+    color: #fdfffc;
+    margin: 0;
+    padding: 13px;
+    text-shadow: 0px 0 0 #000, 0 0px 0 #000, 0 0px 0 #000, -4px 0 0 #000;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-image: url("https://users.metropolia.fi/~juhoahol/kuvat/koivubanner.jpg");
+    color: #fdfffc;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-size: cover;
+
+
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+nav li {
+    display: inline;
+    float: left;
+    width: 50%;
+    /*width: 100%;*/
+}
+
+nav a:link, nav a:visited {
+    background-color: #33673B;
+    color: white;
+    display: block;
+    height: 22px;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0;
+    text-decoration: none;
+    font-size: 18px;
+    text-shadow: 0px 0 0 #000, 0 0px 0 #000, 0 0px 0 #000, -1px 0 0 #000;
+}
+
+nav a:hover {
+    background-color: #0C461F;
+}
+
+/*Kohteiden valinta sivupalkki*/
+.sivuvalikko {
+    height: 535px; /*height: 63vh;*/
+    max-height: 100%;
+    width: 0;
+    position: absolute;
+    z-index: 2;
+    top: 136px;
+    left: 0;
+    background-color: #F1F8F2;
+    overflow-x: hidden;
+    padding: 50px 0 0 0;
+    transition: 0.5s;
+    border-bottom-right-radius: 10px;
+}
+
+.sivuvalikko .sulje {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.avaa {
+    display: block;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #33673B;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    padding: 10px;
+    position: absolute;
+    z-index: 500;
+    border-bottom-right-radius: 2px;
+}
+
+.sulje {
+    display: block;
+}
+
+.avaa:hover {
+    background-color: #0C461F;
+}
+
+.sivuvalikko a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sivuvalikko a:hover {
+    color: #f1f1f1;
+}
+
+form h3 {
+    font-size: 15px;
+    margin: 0;
+    padding: 0 0 10px 0;
+}
+
+/*Ikonit*/
+
+
+.lintu-ikoni {
+    background-image: url(https://users.metropolia.fi/~juhoahol/kuvat/icon-bird-1.png);
+    background-position: center;
+    background-size: 31px;
+    background-color: #e8e183;
+    border: 10px solid rgba(255, 255, 255, 0.0);
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 30px;
+}
+
+.nuotio-ikoni {
+    background-image: url(https://users.metropolia.fi/~juhoahol/kuvat/icon-fire-1.png);
+    background-position: center;
+    background-size: 31px;
+    background-color: #f0a202;
+    border: 10px solid rgba(255, 255, 255, 0.0);
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 30px;
+}
+
+.luola-ikoni {
+    background-image: url(https://users.metropolia.fi/~juhoahol/kuvat/icon-cave-1.png);
+    background-position: center;
+    background-size: 31px;
+    background-color: #c9c9c9;
+    border: 10px solid rgba(255, 255, 255, 0.0);
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 30px;
+}
+
+.lahde-ikoni {
+    background-image: url(https://users.metropolia.fi/~juhoahol/kuvat/icon-spring-1.png);
+    background-position: center;
+    background-size: 31px;
+    background-color: #00a1e4;
+    border: 10px solid rgba(255, 255, 255, 0.0);
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 30px;
+}
+
+.lintutorni-ikoni {
+    background-image: url(https://users.metropolia.fi/~juhoahol/kuvat/icon-tower-1.png);
+    background-position: center;
+    background-size: 31px;
+    background-color: #68d9ff;
+    border: 10px solid rgba(255, 255, 255, 0.0);
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 30px;
+}
+
+.sauna-ikoni {
+    background-image: url(https://users.metropolia.fi/~juhoahol/kuvat/icon-sauna-1.png);
+    background-position: center;
+    background-size: 31px;
+    background-color: #e54b4b;
+    border: 10px solid rgba(255, 255, 255, 0.0);
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 30px;
+}
+
+.tupa-ikoni {
+    background-image: url(https://users.metropolia.fi/~juhoahol/kuvat/icon-shelter-1.png);
+    background-position: center;
+    background-size: 31px;
+    background-color: #1ebe48;
+    border: 10px solid rgba(255, 255, 255, 0.0);
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 30px;
+}
+
+.laavu-ikoni {
+    background-image: url(https://users.metropolia.fi/~juhoahol/kuvat/icon-lean-to-1.png);
+    background-position: center;
+    background-size: 31px;
+    background-color: #1ebe48;
+    border: 10px solid rgba(255, 255, 255, 0.0);
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 30px;
+}
+
+.ruokailukatos-ikoni {
+    background-image: url(https://users.metropolia.fi/~juhoahol/kuvat/icon-shelter-food-1.png);
+    background-position: center;
+    background-size: 31px;
+    background-color: #1ebe48;
+    border: 10px solid rgba(255, 255, 255, 0.0);
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 30px;
+}
+
+.nahtavyys-ikoni {
+    background-image: url(https://users.metropolia.fi/~juhoahol/kuvat/icon-curiosity-1.png);
+    background-position: center;
+    background-size: 31px;
+    background-color: #ffe62e;
+    border: 10px solid rgba(255, 255, 255, 0.0);
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 30px;
+}
+
+.kota-ikoni {
+    background-image: url(https://users.metropolia.fi/~juhoahol/kuvat/icon-hut-1.png);
+    background-position: center;
+    background-size: 31px;
+    background-color: #1ebe48;
+    border: 10px solid rgba(255, 255, 255, 0.0);
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 30px;
+}
+
+.kammi-ikoni {
+    background-image: url(https://users.metropolia.fi/~juhoahol/kuvat/icon-kammi-1.png);
+    background-position: center;
+    background-size: 31px;
+    background-color: #1ebe48;
+    border: 10px solid rgba(255, 255, 255, 0.0);
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 30px;
+}
+
+.varaustupa-ikoni {
+    background-image: url(https://users.metropolia.fi/~juhoahol/kuvat/icon-shelter-reserved-1.png);
+    background-position: center;
+    background-size: 31px;
+    background-color: #1ebe48;
+    border: 10px solid rgba(255, 255, 255, 0.0);
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 30px;
+}
+
+.sijainti-ikoni {
+    background-image: url(https://users.metropolia.fi/~juhoahol/kuvat/icon-user-1.png);
+    background-position: center;
+    background-size: 31px;
+    background-color: #e883b6;
+    border: 10px solid rgba(255, 255, 255, 0.0);
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 30px;
+}
+
+/*Galleria*/
+
+#upotettu {
+    margin-top: 2px;
+}
+
+#video h1, #kuvat h1 {
+    font-size: 30px;
+}
+
+#kuvat ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    max-width: 100%;
+    justify-content: space-evenly;
+    padding: 0;
+    margin-bottom: 50px;
+}
+
+video {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin-bottom: 12px;
+}
+
+#kuvat li {
+    padding: 10px 20px 10px 0;
+}
+
+#video {
+    margin: 60px 0;
+
+}
+
+#linkki, #linkki:visited {
+    color: black;
+    text-decoration: none;
+}
+
+#linkki:hover {
+    color: rgba(0, 0, 0, 0.43);
+
+}
+
+#kasikirjoitus {
+    margin-top: 10px;
+}
+
+/*Ison näytön asetukset*/
+
+.iso {
+    padding-left: 15px;
+
+}
+
+@media only screen and (min-width: 1000px) {
+    #kuvat ul {
+        justify-content: start;
+    }
+
+
+    /*pop-up*/
+    .leaflet-popup-content-wrapper {
+        width: 200px;
+        background-color: #D1DEDE; /*background-color: #A9C4DB;*/
+        border: thin solid #001514;
+    }
+
+
+    .leaflet-popup-tip {
+        background-color: #D1DEDE;
+        border: thin solid #001514;
+    }
+
+    .leaflet-container a.leaflet-popup-close-button {
+        padding: 10px;
+        color: black;
+        margin-left: 10px;
+    }
+
+    aside {
+        margin: 0;
+        z-index: 1;
+        padding: 0 0 0 15px;
+        width: 300px;
+
+    }
+
+    #map {
+        width: 55%;
+        margin: 35px 0 0 0px;
+        z-index: 1;
+    }
+
+    .container {
+        font-family: 'Amaranth', sans-serif;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 40px;
+        /*max-width: 70%;*/
+        max-width: 1000px;
+        padding: 0 30px 30px 20px;
+        border-radius: 20px;
+    }
+
+    form {
+        margin: 0;
+    }
+
+    select {
+        margin-top: 35px;
+    }
+
+
+    .avaa, .sulje {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+    #map {
+        width: 61%;
+
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    #map {
+        width: 65%;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    #map {
+        width: 64%;
+    }
+}
+
